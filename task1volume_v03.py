@@ -67,7 +67,7 @@ for name_i in range(len(name)):
   omap = vtk.vtkPiecewiseFunction()
 
   # load color transfer function
-  with open("naiveCool2Warm.json") as f:
+  with open("naiveCool2Warm_v03.json") as f:
     xx = json.load(f)
     nOpaPoints = int(len(xx[0]['Points']) / 4)
     for i in range(nOpaPoints):
